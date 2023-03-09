@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="response">
+
+    </div>
+<script>
+    const response = "Here is a sample response.        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur vitae modi, inventore eos labore libero voluptatibus nisi quae repellendus blanditiis veritatis! Magnam at amet suscipit totam corporis nam corrupti eos tenetur dolores nostrum temporibus, fuga minima atque saepe veniam ipsum numquam consequuntur recusandae! Et in autem voluptatem ex harum amet. This response will be printed line by line with a smooth delay.";
+const responseArray = response.split(" "); // Split the response into an array of words
+const delay = 200; // The delay between words in milliseconds
+const lineDelay = 1000; // The delay between lines in milliseconds
+
+function printResponse() {
+  const responseDiv = document.getElementById("response");
+  let currentLine = "";
+  let i = 0;
+
+  function printWord() {
+    // Add the next word to the current line
+    currentLine += responseArray[i] + " ";
+    responseDiv.innerHTML = currentLine;
+
+    // If we've printed the last word, exit the function
+    if (i >= responseArray.length - 1) {
+      return;
+    }
+
+    // Otherwise, increment the index and use setTimeout to print the next word
+    i++;
+    setTimeout(printWord, delay);
+  }
+
+  // Use setTimeout to print each line with a delay
+  setTimeout(() => {
+    printWord();
+  }, lineDelay);
+}
+
+printResponse(); // Call the function to print the response
+
+
+
+</script>
+    
+</body>
+</html>

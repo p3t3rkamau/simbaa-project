@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+hr{
+    opacity: .4;
+    color: black;
+}
+
+.wrapper{
+    width: 100%;
+    
+    position: relative;
+}
+body{
+    background: wheat;
+}
+.container{
+    position: relative;
+}
+header nav .navigation{
+    width: 100%;
+    background: gainsboro;
+    height: 80px;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 0;
+}
+header nav .navigation ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+header nav .navigation ul li:nth-child(2), header nav .navigation ul li:nth-child(3), header nav .navigation ul li:nth-child(4), header nav .navigation ul li:nth-child(5), header nav .navigation ul li:nth-child(6){
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li button{
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+header nav .navigation ul li:hover{
+    background: rgb(172, 104, 104);
+}
+.logo img{
+    max-width: 60px;
+    border-radius: 50%;
+    padding: 20px;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.wrapper{
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+.big-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.big-image img{
+    max-width: fit-content;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero-image{
+    background-image: url("/images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    background-attachment: fixed;
+    height: 60vh;
+    position: relative;
+}
+.hero-text{
+    position: absolute;
+    color: white;
+
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.small-text{
+    padding: 2rem;
+}
+.big-text{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.organisation-title{
+    color: blue;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.group-theme{
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 2rem 0 2rem 0;
+    line-height: 40px;
+}
+.group-theme img{
+    width: 100%;
+    border-radius: 20px;
+    height: 50vh;
+}
+.events{
+    text-align: center;
+    padding: 20px;
+}
+.projects{
+    font-size: clamp(16px,18px,20px);
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.projects img{
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.project1,.project2,.project3,.project4{
+    padding: 10px;
+}
+.members{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.members1,.members2,.members3,.members4{
+    padding: 10px;
+    margin: 20px;
+}
+.members img{
+    
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+    width: 100%;
+}
+footer{
+    padding: 0 40px;
+    
+}
+.footer-container{
+    background: gainsboro;
+    padding: 30px;
+    height: 30vh;
+    border-radius: 50px;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.list1 ul, .list2 ul,.list3 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.list3 ul i{
+    font-size: 30px;
+    transition: .8s;
+    cursor: pointer;
+}
+.list3 ul i:hover{
+    color: red;
+}
